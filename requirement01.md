@@ -1,4 +1,11 @@
+Create initial draft of requirements derived from the argriculture use case.
+Threre are three types of requirements in the folloing.
+
+(sorry, I cannot participate arch call1 on 30.4)
+
 ## Title: <title>
+  
+Requiremnens for the device virtualization, TD states, and Units in TD
 
 ### Submitter(s): 
 
