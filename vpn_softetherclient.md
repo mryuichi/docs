@@ -1,6 +1,6 @@
 # Setup instruction for SoftEther VPN client
 
-NOTE: This instaruction asumes using linux on Raspberry Pi.
+NOTE: This instaruction asumes using linux on Raspberry Pi. `testuser/pftest` is an example for User ID and password.
 
 ## 1. Download VPN bridge from SoftEther Download Center
 - go to https://www.softether-download.com/en.aspx?product=softether
@@ -37,16 +37,13 @@ Connection has been established with VPN Client "localhost".
 - VPN Client>NicCreate tun0      <----
 
 ## 7. Create an account for the connection to VPN server
-- VPN Client>AccountCreate tun0 /SERVER:54.70.41.152:5555 /HUB:wotpf /USERNAME:ryu
-ichi /NICNAME:tun0            <---
+- VPN Client>AccountCreate tun0 /SERVER:xxx.xxx.xxx.xxx:5555 /HUB:wotpf /USERNAME:`testuser` /NICNAME:tun0            <---
 - VPN Client>NicEnable tun0            <---
-- VPN Client>AccountUsernameSet tun0 /USERNAME:ryuichi            <---
-- VPN Client>AccountPasswordSet tun0 /PASSWORD:wotryuichi /TYPE:standard            <---
+- VPN Client>AccountUsernameSet tun0 /USERNAME:`testuser`            <---
+- VPN Client>AccountPasswordSet tun0 /PASSWORD:`pftest` /TYPE:standard            <---
 - VPN Client>AccountConnect tun0            <---
 
 ## 8. Note for local bridging
-If you need to connect the machines in VPN from the machine where `vpnbridge` is running,
-
-you should get IP address from DHCP server
+You should get IP address from DHCP server
 - % sudo dhclient vpn_tun0
 - % ip addr show vpn_tun0
