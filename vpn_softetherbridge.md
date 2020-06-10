@@ -50,11 +50,11 @@ wlan0
 ## 7. Connect Virtual Hub `BRIDGE` to VPN server
 - VPN Server>Hub BRIDGE            <---
 
-- VPN Server/BRIDGE>CascadeCreate wotpf(mybridge) /SERVER:54.168.145.32:443 /HUB:main /USERNAME:testuser  <---
+- VPN Server/BRIDGE>CascadeCreate mybridge /SERVER:54.168.145.32:443 /HUB:main /USERNAME:testuser  <---
 
-- VPN Server/BRIDGE>CascadePasswordSet wotpf /PASSWORD:wottest /TYPE:standard    <---
+- VPN Server/BRIDGE>CascadePasswordSet mybridge /PASSWORD:wottest /TYPE:standard    <---
 
-- VPN Server/BRIDGE>CascadeOnline wotpf   <---
+- VPN Server/BRIDGE>CascadeOnline mybridge   <---
 
 ## 8. Note for local bridging
 If you need to connect the machines in VPN from the machine where `vpnbridge` is running,
