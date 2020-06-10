@@ -37,7 +37,7 @@ Connection has been established with VPN Client "localhost".
 - VPN Client>NicCreate tun0      <----
 
 ## 7. Create an account for the connection to VPN server
-- VPN Client>AccountCreate tun0 /SERVER:xxx.xxx.xxx.xxx:5555 /HUB:wotpf /USERNAME:`testuser` /NICNAME:tun0            <---
+- VPN Client>AccountCreate tun0 /SERVER:xxx.xxx.xxx.xxx: /HUB:wotpf /USERNAME:`testuser` /NICNAME:tun0            <---
 - VPN Client>NicEnable tun0            <---
 - VPN Client>AccountUsernameSet tun0 /USERNAME:`testuser`            <---
 - VPN Client>AccountPasswordSet tun0 /PASSWORD:`pftest` /TYPE:standard            <---
