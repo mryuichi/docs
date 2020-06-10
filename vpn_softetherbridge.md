@@ -1,6 +1,7 @@
 # Setup instruction for SoftEther VPN Bridge
 
 NOTE: This instaruction asumes using linux on Raspberry Pi.
+`testuser/pftest` is a sample User ID and password in the instruction.
 
 ## 1. Download VPN bridge from SoftEther Download Center
 - go to https://www.softether-download.com/en.aspx?product=softether
@@ -50,9 +51,9 @@ wlan0
 ## 7. Connect Virtual Hub `BRIDGE` to VPN server
 - VPN Server>Hub BRIDGE            <---
 
-- VPN Server/BRIDGE>CascadeCreate mybridge /SERVER:54.168.145.32:443 /HUB:main /USERNAME:testuser  <---
+- VPN Server/BRIDGE>CascadeCreate mybridge /SERVER:xxx.xxx.xxx.xxx:443 /HUB:main /USERNAME:testuser  <---
 
-- VPN Server/BRIDGE>CascadePasswordSet mybridge /PASSWORD:wottest /TYPE:standard    <---
+- VPN Server/BRIDGE>CascadePasswordSet mybridge /PASSWORD:pftest /TYPE:standard    <---
 
 - VPN Server/BRIDGE>CascadeOnline mybridge   <---
 
