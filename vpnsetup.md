@@ -4,7 +4,7 @@
 
 The online plugfest network configuration is shown in this description. The VPN server is Softether VPN Server and runs on AWS.
 This network is 192.168.30.0/24 and has 2 areas for the device/PC for fixed IP addresses and for unfixed addresses allocated by DHCP.
-If you needs fixed IP addresses, you must check the IP address table and get it in advance.
+If you needs fixed IP addresses, you must check the [IP address table] (https://github.com/mryuichi/docs/blob/master/vpn_ipadr.csv) and get it in advance.
 
 The following information for the actual connection will be sent, if you need. Please send your reqeust to the mailing list.
 Information needed to connect
